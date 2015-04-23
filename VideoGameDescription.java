@@ -5,21 +5,21 @@ Margaret Caufield - mec0030
 
 public class VideoGameDescription extends ItemDescription
 {
-   private String rating;
+   private GameRating rating;
    
    public VideoGameDescription(String titleIn, int yearIn, int lengthIn, 
-      String ratingIn)
+      GameRating ratingIn)
    {
       super(titleIn, yearIn, lengthIn);
       rating = ratingIn;
    }
    
-   public String getRating()
+   public GameRating getRating()
    {
       return rating;
    }
    
-   public void setRating(String ratingIn)
+   public void setRating(GameRating ratingIn)
    {
       rating = ratingIn;
    }

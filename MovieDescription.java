@@ -5,23 +5,23 @@ Margaret Caufield - mec0030
 
 public class MovieDescription extends ItemDescription
 {
-   private String rating;
+   private MovieRating rating;
    private String director;
    
    public MovieDescription(String titleIn, int yearIn, int lengthIn, 
-      String ratingIn, String directorIn)
+      MovieRating ratingIn, String directorIn)
    {
       super(titleIn, yearIn, lengthIn);
       rating = ratingIn;
       director = directorIn;
    }
    
-   public String getRating()
+   public MovieRating getRating()
    {
       return rating;
    }
    
-   public void setRating(String ratingIn)
+   public void setRating(MovieRating ratingIn)
    {
       rating = ratingIn;
    }

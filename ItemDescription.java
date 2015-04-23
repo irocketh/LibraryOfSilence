@@ -8,12 +8,14 @@ public abstract class ItemDescription
    private int yearReleased;
    private String title;
    private int lengthOfRental;
+   private double finePerDay;
    
-   public ItemD<escription(String titleIn, int yearIn, int lengthIn)
+   public ItemDescription(String titleIn, int yearIn, int lengthIn, double fineIn)
    {
       title = titleIn;
       yearReleased = yearIn;
       lengthOfRental = lengthIn;
+      finePerDay = fineIn;
    }
    
    public int getYearReleased()
@@ -44,6 +46,16 @@ public abstract class ItemDescription
    public void setRentalLength(int lengthIn)
    {
       lengthOfRental = lengthIn;
+   }
+   
+   public void setFine(double fineIn)
+   {
+      finePerDay = fineIn;
+   } 
+   
+   public double getFine(double fineIn)
+   {
+      return finePerDay;
    }
    
       public String toString()
